@@ -26,7 +26,7 @@ defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 # defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
 # Menu bar: hide the useless Time Machine and Volume icons
-defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
+# defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Scrollbar behavior
 # Possible values:
@@ -536,6 +536,34 @@ defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
 
 # Hide the app in the background if it’s not the front-most window
 # defaults write com.twitter.twitter-mac HideInBackground -bool true
+
+###############################################################################
+# Coda 2                                                                      #
+###############################################################################
+
+# Set tab to 2 spaces
+defaults write com.panic.Coda2 SEEMode.Base -dict-add TabWidth -int 2
+defaults write com.panic.Coda2 SEEMode.Base -dict-add UseTabs -bool false
+
+# Show hidden files
+defaults write com.panic.Coda2 ShowsHiddenFiles -bool true
+
+# Terminal Font Size
+defaults write com.panic.Coda2 TerminalFontSize -int 11
+
+# Name and email
+defaults write com.panic.Coda2 MyName -string "Christian Bloch"
+defaults write com.panic.Coda2 MyName -string "christianbloch@gmail.com"
+
+###############################################################################
+# Copy certain common files from Dropbox                                      #
+###############################################################################
+
+# Textmate themes
+cp -R "$HOME/Dropbox/Common/Themes.tmbundle" "$HOME/Library/Application Support/Avian/Bundles"
+
+# Coda 2 theme
+cp -R "$HOME/Dropbox/Common/Funque.sss" "$HOME/Library/Application Support/Coda 2/Styles"
 
 ###############################################################################
 # Kill affected applications                                                  #
