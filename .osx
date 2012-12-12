@@ -555,15 +555,16 @@ defaults write com.panic.Coda2 TerminalFontSize -int 11
 defaults write com.panic.Coda2 MyName -string "Christian Bloch"
 defaults write com.panic.Coda2 MyName -string "christianbloch@gmail.com"
 
+# Theme
+cp -R "$HOME/themes/Funque.sss" "$HOME/Library/Application Support/Coda 2/Styles"
+
 ###############################################################################
-# Copy certain common files from Dropbox                                      #
+# TextMate 2                                                                  #
 ###############################################################################
 
-# Textmate themes
-cp -R "$HOME/Dropbox/Common/Themes.tmbundle" "$HOME/Library/Application Support/Avian/Bundles"
+# Theme
+cp -R "$HOME/themes/Themes.tmbundle" "$HOME/Library/Application Support/Avian/Bundles"
 
-# Coda 2 theme
-cp -R "$HOME/Dropbox/Common/Funque.sss" "$HOME/Library/Application Support/Coda 2/Styles"
 
 ###############################################################################
 # Kill affected applications                                                  #
