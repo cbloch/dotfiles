@@ -15,6 +15,6 @@ else
 fi
 unset doIt
 source ~/.bash_profile
-# Set OS X defaults and initialize terminal
+
+# Set OS X defaults
 ./.osx
-./init/Funque.terminal
