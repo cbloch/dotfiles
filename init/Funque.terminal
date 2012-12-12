@@ -44,5 +44,7 @@
 	<integer>2</integer>
 	<key>type</key>
 	<string>Window Settings</string>
+	<key>Startup Window Settings</key>
+	<string>Pro</string>
 </dict>
 </plist>
