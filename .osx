@@ -563,7 +563,7 @@ cp -R "$HOME/themes/Funque.sss" "$HOME/Library/Application Support/Coda 2/Styles
 ###############################################################################
 
 # Theme
-cp -R "$HOME/themes/Themes.tmbundle" "$HOME/Library/Application Support/Avian/Bundles"
+rsync -avh "$HOME/themes/Themes.tmbundle" "$HOME/Library/Application Support/Avian/Bundles"
 
 
 ###############################################################################
