@@ -556,14 +556,14 @@ defaults write com.panic.Coda2 MyName -string "Christian Bloch"
 defaults write com.panic.Coda2 MyName -string "christianbloch@gmail.com"
 
 # Theme
-cp -R "$HOME/themes/Funque.sss" "$HOME/Library/Application Support/Coda 2/Styles"
+rsync -avh -R "$HOME/themes/Coda 2/Styles/Funque.sss" "$HOME/Library/Application Support/Coda 2/Styles"
 
 ###############################################################################
 # TextMate 2                                                                  #
 ###############################################################################
 
 # Theme
-rsync -avh "$HOME/themes/Themes.tmbundle" "$HOME/Library/Application Support/Avian/Bundles"
+rsync -avh "$HOME/themes/Avian/Bundles/Themes.tmbundle" "$HOME/Library/Application Support/Avian/Bundles"
 
 
 ###############################################################################
