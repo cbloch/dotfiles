@@ -8,8 +8,6 @@
 	<string>Pretty colors</string>
 	<key>name</key>
 	<string>Funque</string>
-	<key>scope</key>
-	<string>*</string>
 	<key>semanticClass</key>
 	<string>theme.Funque</string>
 	<key>settings</key>
